@@ -1,6 +1,6 @@
 ---
 title: 'Some information about me'
-date: '2022-24-11'
+date: '2022-11-24'
 ---
 
 Hi there, I'm Jose David Gómez, and this is my personal blog using Next.js Framework.
