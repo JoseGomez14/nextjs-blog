@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Some information about Kevin'
 date: '2022-11-25'
 ---
