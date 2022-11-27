@@ -18,7 +18,8 @@
     cursor: pointer;
 }
 
-.btnTheme:hover, .btnTheme:focus, .btnTheme:active{
+.btnTheme:hover, .btnTheme:active{
     border-radius: 6px;
     border-color: var(--blue);
+    background-color: var(--background-hover);
 }

@@ -51,15 +51,16 @@
     color: var(--text-light);
 }
 
-.markdown code{
-    background-color: rgba(0,0,0, 6%);
+.markdown code {
+    background-color: rgba(0, 0, 0, 6%);
     border-radius: 2px;
     padding: 2px 4px 1px;
 }
 
-.markdown pre{
-    background-color: rgba(0,0,0, 0.8);
+.markdown pre {
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
     padding: 10px;
     color: #f4f4f4;
+    overflow-x: scroll;
 }
