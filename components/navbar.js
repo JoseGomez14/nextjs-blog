@@ -10,7 +10,7 @@ const Navbar = () => {
             setScheme(localStorage.getItem('scheme'));
         }
         document.documentElement.setAttribute('scheme', scheme);
-    })
+    }, [scheme])
 
     const handleChangeScheme = () => {
         let colorScheme = scheme == 'dark' ? 'light' : 'dark';
@@ -26,13 +26,13 @@ const Navbar = () => {
                     {scheme == 'dark' ? '🌞' : '🌚'}</button>
             </li>
             <li>
-                <a href='https://www.youtube.com/' target='_blank'>📹</a>
+                <a href='https://www.youtube.com/' target='_blank' rel="noreferrer">📹</a>
             </li>
             <li>
-                <a href='https://www.whatsapp.com/' target='_blank'>📞</a>
+                <a href='https://www.whatsapp.com/' target='_blank' rel="noreferrer">📞</a>
             </li>
             <li>
-                <a href='https://www.instagram.com/' target='_blank'>📺</a>
+                <a href='https://www.instagram.com/' target='_blank' rel="noreferrer">📺</a>
             </li>
         </ul>
     </nav>
