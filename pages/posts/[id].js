@@ -9,6 +9,7 @@ export default function Post({ postData }) {
         <Head>
             <title>{postData.title}</title>
             {postData.description && <meta name="description" content={postData.description} />}
+            <meta name="color-scheme" content="dark"/>
         </Head>
         <article className={utilStyles.markdown}>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>

@@ -19,6 +19,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="color-scheme" content="dark light"/>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, I’m <b>Jose</b>. I’m a systems engineer. You can contact me on Twitter.</p>

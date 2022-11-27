@@ -1,5 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+*:root{
+  --background: #F4F4F4;
+  --background-hover: #eee;
+  --text: #444;
+  --text-dark: #111;
+  --text-light: #666;
+  --blue: #09f;
+}
+
+*[scheme = 'dark']:root{
+  --background: #20252C;
+  --background-hover: #3c4654;
+  --text: #FAFAFA;
+  --text-dark: #eee;
+  --text-light: #666;
+  --blue: #09f;
+}
+
 html,
 body {
+  background-color: var(--background);
+  color: var(--text);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
@@ -8,12 +32,8 @@ body {
   font-size: 18px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 a {
-  color: #0070f3;
+  color: var(--blue);
   text-decoration: none;
 }
 

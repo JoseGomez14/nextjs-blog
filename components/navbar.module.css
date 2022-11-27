@@ -1,0 +1,24 @@
+.navbar{
+    height: 4.8rem;
+    color: var(--text);
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnTheme{
+    height: fit-content;
+    border: 1px solid transparent;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 1.5rem;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.btnTheme:hover, .btnTheme:focus, .btnTheme:active{
+    border-radius: 6px;
+    border-color: var(--blue);
+}
