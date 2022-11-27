@@ -11,7 +11,7 @@ export default function Post({ postData }) {
             {postData.description && <meta name="description" content={postData.description} />}
             <meta name="color-scheme" content="dark"/>
         </Head>
-        <article className={utilStyles.markdown}>
+        <article>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
             <div className={utilStyles.lightText}>
                 <Date dateString={postData.date} />

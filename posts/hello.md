@@ -6,11 +6,32 @@ date: '2021-01-01'
 
 This a test message.
 
-```js
-Code blocks
-Testing with Js
+# JavaScript code
+
+```javascript
+const test = 'test'
+const arrowfunction = ()=>{
+    // Do something
+}
 ```
 
-<div role="note" class="info">
-    &copy; 2004 Foo Corporation
+# CSS code
+
+
+```css
+element{
+    color: red;
+    font-size: 14px:
+}
+```
+
+# HTML code
+
+
+```html
+<div>
+    <h1>Hello World!</h1>
 </div>
+```
+
+More text....
