@@ -45,3 +45,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+@media (max-width: 500px) {
+  html, body{
+    font-size: 15px;
+  }
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import navbarStyles from './navbar.module.css'
 
@@ -18,10 +19,22 @@ const Navbar = () => {
     }
 
     return <nav className={navbarStyles.navbar} id='navbar'>
-        <h1>Blog</h1>
-        <button className={navbarStyles.btnTheme}
-            onClick={handleChangeScheme} title='Change theme'>
-            {scheme == 'dark'? '🌞': '🌚'}</button>
+        <Link href='/' className={navbarStyles.brand}><h1>👨‍💻Jose G</h1></Link>
+        <ul className={navbarStyles.listActions}>
+            <li>
+                <button onClick={handleChangeScheme} title='Change theme'>
+                    {scheme == 'dark' ? '🌞' : '🌚'}</button>
+            </li>
+            <li>
+                <a href='https://www.youtube.com/' target='_blank'>📹</a>
+            </li>
+            <li>
+                <a href='https://www.whatsapp.com/' target='_blank'>📞</a>
+            </li>
+            <li>
+                <a href='https://www.instagram.com/' target='_blank'>📺</a>
+            </li>
+        </ul>
     </nav>
 }
 

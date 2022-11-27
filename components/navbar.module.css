@@ -6,19 +6,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-.btnTheme{
+.brand, .brand:hover{
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.brand:hover{
+    transform: scale(1.05);
+}
+
+.brand::first-letter{
+    font-size: 2.2rem;
+}
+
+.listActions{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.listActions li a, .listActions li button{
     height: fit-content;
+    text-decoration: none;
     border: 1px solid transparent;
     background-color: var(--background);
     color: var(--text);
     font-size: 1.5rem;
-    padding: 10px 12px;
+    padding: 10px 0.6rem;
     cursor: pointer;
 }
 
-.btnTheme:hover, .btnTheme:active{
+.listActions li a:hover, .listActions li a:active, .listActions li button:hover, .listActions li button:active{
     border-radius: 6px;
     border-color: var(--blue);
     background-color: var(--background-hover);
