@@ -19,7 +19,7 @@ const arrowfunction = ()=>{
 
 
 ```css
-element{
+.element{
     color: red;
     font-size: 14px:
 }

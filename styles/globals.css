@@ -8,7 +8,7 @@
   --background-code: rgba(60, 70, 84, 0.2);
   --text: #444;
   --text-dark: #111;
-  --text-light: #666;
+  --text-light: #888;
   --blue: #09f;
 }
 
@@ -18,7 +18,7 @@
   --background-code: rgba(180, 180, 180, 0.8);
   --text: #FAFAFA;
   --text-dark: #eee;
-  --text-light: #666;
+  --text-light: #888;
   --blue: #09f;
 }
 
@@ -98,11 +98,10 @@ pre code {
 
 pre code::before {
   color: #282c34;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 800;
   padding: 20px 0.4rem 0;
-  width: fit-content;
-  height: 2rem;
+  height: 1.8rem;
   text-align: center;
   border-radius: 5px;
   position: absolute;
@@ -112,7 +111,7 @@ pre code::before {
 
 pre code.language-javascript::before {
   content: 'JS';
-  background-color: #ff0;
+  background-color: #f7df1e;
 }
 
 pre code.language-css::before {
