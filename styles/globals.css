@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-*:root{
+*:root {
   --background: #F4F4F4;
   --background-hover: #eee;
   --background-code: rgba(60, 70, 84, 0.2);
@@ -12,7 +12,7 @@
   --blue: #09f;
 }
 
-*[scheme = 'dark']:root{
+*[scheme='dark']:root {
   --background: #20252C;
   --background-hover: #3c4654;
   --background-code: rgba(180, 180, 180, 0.8);
@@ -32,6 +32,26 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--background) var(--text);
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--text);
+  border-radius: 10px;
+  border: 3px solid var(--background);
 }
 
 a {
@@ -55,7 +75,7 @@ code {
   padding: 2px 4px 1px;
 }
 
-pre{
+pre {
   background: #282c34;
   border-radius: 4px;
   margin: 0;
@@ -64,8 +84,8 @@ pre{
   position: relative;
 }
 
-pre code{
-  font-family: Consolas,Menlo,Monaco,source-code-pro,monospace;
+pre code {
+  font-family: Consolas, Menlo, Monaco, source-code-pro, monospace;
   color: #f4f4f4;
   background-color: transparent;
   hyphens: none;
@@ -76,7 +96,7 @@ pre code{
   white-space: pre;
 }
 
-pre code::before{
+pre code::before {
   color: #282c34;
   font-size: 1.2rem;
   font-weight: 800;
@@ -90,25 +110,27 @@ pre code::before{
   right: 15px;
 }
 
-pre code.language-javascript::before{
+pre code.language-javascript::before {
   content: 'JS';
   background-color: #ff0;
 }
 
-pre code.language-css::before{
+pre code.language-css::before {
   content: 'CSS';
   color: #F4F4F4;
   background-color: #2965f1;
 }
 
-pre code.language-html::before{
+pre code.language-html::before {
   content: 'HTML';
   color: #F4F4F4;
   background-color: #e34f26;
 }
 
 @media (max-width: 500px) {
-  html, body{
+
+  html,
+  body {
     font-size: 15px;
   }
 }
